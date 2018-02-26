@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
             'php' => '5.5.0-7.2.99',
             'typo3' => '7.6.0-8.7.99',
             'templavoilaplus' => '7.1.3-7.99.99',
-            'yoast_seo' => '1.1.0-1.99.99',
+            'yoast_seo' => '1.1.0-2.99.99',
         ],
     ],
     'autoload' => [
