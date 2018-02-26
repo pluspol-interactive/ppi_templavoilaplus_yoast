@@ -1,9 +1,9 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
     'title' => 'TemplaVoila! Plus for Yoast SEO',
-    'description' => 'Integration of Yoast SEO into TemplaVoilà! Plus.',
+    'description' => 'Integration of Yoast SEO into TemplaVoilà! Plus page layout module.',
     'category' => 'misc',
-    'version' => '0.2.1',
+    'version' => '0.3.0',
     'state' => 'stable',
     'uploadfolder' => 0,
     'clearCacheOnLoad' => 0,
