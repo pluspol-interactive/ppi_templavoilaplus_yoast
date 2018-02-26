@@ -22,6 +22,7 @@ namespace Ppi\PpiTemplavoilaplusYoast;
  */
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 
 use Ppi\TemplaVoilaPlus\Controller\BackendLayoutController;
 
@@ -42,6 +43,23 @@ class RenderHook
 
         /** @var YoastSeoForTypo3\YoastSeo\Backend\PageLayoutHeader $yoast */
         $yoast = GeneralUtility::makeInstance(\YoastSeoForTypo3\YoastSeo\Backend\PageLayoutHeader::class);
-        return $yoast->render();
+        $output = $yoast->render();
+
+        $returnUrlFalse = BackendUtility::getModuleUrl(
+            'web_layout',
+            ['id' => (int)$parentObject->id]
+        );
+
+        $returnUrlTemplaVoila = BackendUtility::getModuleUrl(
+            'web_txtemplavoilaplusLayout',
+            ['id' => (int)$parentObject->id]
+        );
+
+        $returnUrlFalse = rawurlencode($returnUrlFalse);
+        $returnUrlTemplaVoila = rawurlencode($returnUrlTemplaVoila);
+
+        $output = str_replace($returnUrlFalse, $returnUrlTemplaVoila, $output);
+
+        return $output;
     }
 }
