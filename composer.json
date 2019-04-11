@@ -20,7 +20,7 @@
     ],
     "require": {
         "typo3/cms-core": "^7.6.0 || ^8.7.0 || ^9.5.0",
-        "yoast-seo-for-typo3/yoast_seo ": ">=1.1.0 <4.99.99",
+        "yoast-seo-for-typo3/yoast_seo": ">=1.1.0 <4.99.99",
         "templavoilaplus/templavoilaplus": ">=7.1.2 <7.99.99",
         "php": ">=5.5.0 <7.3.99"
     },
