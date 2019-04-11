@@ -1,7 +1,7 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
     'title' => 'TemplaVoilà! Plus for Yoast SEO',
-    'description' => 'Integration of Yoast SEO into TemplaVoilà! Plus page layout module.',
+    'description' => 'Integration of TYPO3 Yoast SEO into TemplaVoilà! Plus page layout module.',
     'category' => 'misc',
     'version' => '0.3.1-dev',
     'state' => 'stable',
